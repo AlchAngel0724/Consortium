@@ -1,0 +1,60 @@
+{
+  "name": "consortium",
+  "version": "0.1.0",
+  "description": "OpenCode Plugin: Multi-Agent AI System for Automated Software Development",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "echo \"Tests coming soon\"",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "ai",
+    "agents",
+    "multi-agent",
+    "automation",
+    "coding-assistant",
+    "project-management",
+    "code-review"
+  ],
+  "author": "AlchAngel0724",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlchAngel0724/Consortium.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlchAngel0724/Consortium/issues"
+  },
+  "homepage": "https://github.com/AlchAngel0724/Consortium#readme",
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.1.19",
+    "@ast-grep/napi": "^0.40.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "bun-types": "latest",
+    "eslint": "^9.18.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "opencode": "*"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
